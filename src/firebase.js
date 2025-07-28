@@ -4,12 +4,10 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDSRZyMwBlqq-5iHQ2lQdq5TwhUAew9f70",
-    authDomain: "twirltrack-a628e.firebaseapp.com",
-    projectId: "twirltrack-a628e",
-    storageBucket: "twirltrack-a628e.appspot.com",
-    messagingSenderId: "316986222980",
-    appId: "1:316986222980:web:0b38442d36126745e415d1"
+  apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+  authDomain: "twirltrack-a628e.firebaseapp.com",
+  projectId: "twirltrack-a628e",
+  storageBucket: "twirltrack-a628e.appspot.com",
 };
 
 const app = initializeApp(firebaseConfig);
